@@ -21,3 +21,7 @@ In this assignment a kernel module is created which reads various MSR values to 
     - `sudo insmod cmpe283-1.ko` this command loads module into kernel
     - `sudo rmmod cmpe283-1` this command unloads module into kernel
 8. To see the output of the module `dmesg` command is used to display kernel logs on terminal. The output of module is as follows: 
+![Screenshot from 2022-04-14 10-02-07](https://user-images.githubusercontent.com/27214644/163438275-088dfda8-34e2-4817-8db1-e6090ae74d6f.png)
+![Screenshot from 2022-04-14 10-02-32](https://user-images.githubusercontent.com/27214644/163438280-fcc1f6e4-9c5f-486f-8b2c-dc2d49d63ed5.png)
+![Screenshot from 2022-04-14 10-02-44](https://user-images.githubusercontent.com/27214644/163438290-efcd3ab3-3aad-4f89-b3ca-f8d38f1f83f4.png)
+
