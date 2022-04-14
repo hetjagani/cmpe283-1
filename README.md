@@ -1,8 +1,8 @@
 # CMPE 283 - Assignment 1
 
 ## Questions
-## 1.Team Details: Doing myself   
-## 2. Describe in detail the steps you used to complete the assignment.  
+### 1.Team Details: Doing myself   
+### 2. Describe in detail the steps you used to complete the assignment.  
 In this assignment a kernel module is created which reads various MSR values to determine virtualization features present in CPU.   
 >> I use Fedora as my OS so this assigment was performed on a Fedora installed machine. 
 #### Steps followed to complete assignment
@@ -16,3 +16,8 @@ In this assignment a kernel module is created which reads various MSR values to 
     - These instances contains bit number and description about what feature that bit represents.
 4. Modified `detect_vmx_features` function to call `report_capabilities` 4 more times with appropriate parameters, to display proc, exit and entry based capabilities.
 5. Included `MODULE_LICENSE()` in the module which is required to compile module. Commit showing these changes is https://github.com/hetjagani/cmpe283-1/commit/c3d50cb9276ff68cbe92c045bee04bdeb256671e
+6. After modifying code the module was compiled using `make` command. This generated kernel object `cmpe283-1.ko` file which can be loaded into kernel.
+7. Kernel module was loaded and removed from the kernel using following commands:
+    - `sudo insmod cmpe283-1.ko` this command loads module into kernel
+    - `sudo rmmod cmpe283-1` this command unloads module into kernel
+8. To see the output of the module `dmesg` command is used to display kernel logs on terminal. The output of module is as follows: 
